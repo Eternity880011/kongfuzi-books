@@ -46,7 +46,7 @@ export default function Home() {
               <TrendingUp className="w-5 h-5" />
               <span className="font-semibold">最新活动：</span>
               <span className="text-gray-600">
-                "明清善本专场" 直播预告 - 12月20日 14:00
+                &ldquo;明清善本专场&rdquo; 直播预告 - 12月20日 14:00
               </span>
             </div>
             <a href="/events" className="text-amber-600 hover:text-amber-700">

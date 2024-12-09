@@ -1,6 +1,6 @@
 'use client'
 
-import { Search, ShoppingCart, User,Book, BookOpen, History, Star } from 'lucide-react'
+import { Search, ShoppingCart, User, Book, BookOpen, History, Star } from 'lucide-react'
 import Link from 'next/link'
 
 export function Header() {
@@ -44,22 +44,22 @@ export function Sidebar() {
     <aside className="hidden md:flex w-64 flex-col border-r bg-white p-4">
       <h2 className="mb-4 text-lg font-semibold">图书分类</h2>
       <nav className="space-y-2">
-        <a href="#" className="flex items-center space-x-2 rounded-lg px-3 py-2 hover:bg-gray-100">
+        <Link href="/categories/art" className="flex items-center space-x-2 rounded-lg px-3 py-2 hover:bg-gray-100">
           <Book className="h-5 w-5" />
           <span>文学艺术</span>
-        </a>
-        <a href="#" className="flex items-center space-x-2 rounded-lg px-3 py-2 hover:bg-gray-100">
+        </Link>
+        <Link href="/categories/philosophy" className="flex items-center space-x-2 rounded-lg px-3 py-2 hover:bg-gray-100">
           <BookOpen className="h-5 w-5" />
           <span>历史哲学</span>
-        </a>
-        <a href="#" className="flex items-center space-x-2 rounded-lg px-3 py-2 hover:bg-gray-100">
+        </Link>
+        <Link href="/categories/ancient" className="flex items-center space-x-2 rounded-lg px-3 py-2 hover:bg-gray-100">
           <History className="h-5 w-5" />
           <span>古籍善本</span>
-        </a>
-        <a href="#" className="flex items-center space-x-2 rounded-lg px-3 py-2 hover:bg-gray-100">
+        </Link>
+        <Link href="/categories/special" className="flex items-center space-x-2 rounded-lg px-3 py-2 hover:bg-gray-100">
           <Star className="h-5 w-5" />
           <span>特色藏品</span>
-        </a>
+        </Link>
       </nav>
     </aside>
   )

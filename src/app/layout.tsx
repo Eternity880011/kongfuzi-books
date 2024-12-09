@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -23,9 +24,9 @@ export default function RootLayout({
               <div className="flex items-center space-x-8">
                 <h1 className="text-2xl font-bold text-amber-600">孔夫子旧书网</h1>
                 <div className="hidden md:flex space-x-6">
-                  <a href="/" className="text-gray-600 hover:text-amber-600">首页</a>
-                  <a href="/stores" className="text-gray-600 hover:text-amber-600">书店区</a>
-                  <a href="/categories" className="text-gray-600 hover:text-amber-600">书籍分类</a>
+                  <Link href="/" className="text-gray-600 hover:text-amber-600">首页</Link>
+                  <Link href="/stores" className="text-gray-600 hover:text-amber-600">书店区</Link>
+                  <Link href="/categories" className="text-gray-600 hover:text-amber-600">书籍分类</Link>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -50,24 +51,24 @@ export default function RootLayout({
               <h2 className="text-lg font-semibold text-gray-800 mb-4">图书分类</h2>
               <ul className="space-y-2">
                 <li>
-                  <a href="/category/classics" className="text-gray-600 hover:text-amber-600 block py-2">
+                  <Link href="/category/classics" className="text-gray-600 hover:text-amber-600 block py-2">
                     经部
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/category/history" className="text-gray-600 hover:text-amber-600 block py-2">
+                  <Link href="/category/history" className="text-gray-600 hover:text-amber-600 block py-2">
                     史部
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/category/philosophy" className="text-gray-600 hover:text-amber-600 block py-2">
+                  <Link href="/category/philosophy" className="text-gray-600 hover:text-amber-600 block py-2">
                     子部
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/category/literature" className="text-gray-600 hover:text-amber-600 block py-2">
+                  <Link href="/category/literature" className="text-gray-600 hover:text-amber-600 block py-2">
                     集部
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -98,9 +99,9 @@ export default function RootLayout({
               <div>
                 <h3 className="text-lg font-semibold mb-4">关注我们</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="text-gray-400 hover:text-white">微信</a>
-                  <a href="#" className="text-gray-400 hover:text-white">微博</a>
-                  <a href="#" className="text-gray-400 hover:text-white">知乎</a>
+                  <Link href="/wechat" className="text-gray-400 hover:text-white">微信</Link>
+                  <Link href="/weibo" className="text-gray-400 hover:text-white">微博</Link>
+                  <Link href="/zhihu" className="text-gray-400 hover:text-white">知乎</Link>
                 </div>
               </div>
             </div>
